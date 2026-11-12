@@ -1,0 +1,11 @@
+{
+  "name": "Практикум по охране труда",
+  "short_name": "Практикум ОТ",
+  "description": "Интерактивное обучение по охране труда",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f5f7f4",
+  "theme_color": "#1f6a4c",
+  "lang": "ru",
+  "icons": []
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f5f7f4">
+  <meta name="description" content="Интерактивный тренажёр по охране труда: шум, вибрация, заземление и пожарная безопасность.">
+  <title>Охрана труда — лаборатория безопасности</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#home" aria-label="На главную"><span class="brand-mark">ОТ</span><span><b>Практикум</b><small>ОХРАНА ТРУДА</small></span></a>
+      <div class="nav-label">ОБУЧЕНИЕ</div>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <button class="nav-item active" data-page="home"><span class="nav-icon">⌂</span>Обзор</button>
+        <button class="nav-item" data-page="noise"><span class="nav-icon">◖</span>Шум и акустика</button>
+        <button class="nav-item" data-page="vibration"><span class="nav-icon">〰</span>Вибрация</button>
+        <button class="nav-item" data-page="ground"><span class="nav-icon">⏚</span>Заземление</button>
+        <button class="nav-item" data-page="fire"><span class="nav-icon">✳</span>Пожаротушение</button>
+      </nav>
+      <div class="sidebar-bottom"><div class="safe-card"><div class="safe-icon">✦</div><b>Знания защищают</b><p>Короткие практические сценарии для уверенных решений на рабочем месте.</p></div><div class="profile"><div class="avatar">У</div><div><b>Ученик</b><small>Учебный режим</small></div><span class="online-dot"></span></div></div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><button class="mobile-brand" data-page="home"><span class="brand-mark">ОТ</span><b>Практикум</b></button><div class="crumb"><span>Охрана труда</span><i>/</i><b id="crumbTitle">Обзор</b></div><div class="top-actions"><span class="today" id="today"></span><button class="icon-button" id="installBtn" title="Установить приложение" hidden>↧</button><button class="help-button" id="helpBtn"><span>?</span> Как пользоваться</button><button class="menu-button" id="menuBtn" aria-label="Открыть меню">☰</button></div></header>
+      <section id="appContent" class="content"></section>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <dialog id="helpDialog"><div class="dialog-head"><div><span class="eyebrow">БЫСТРЫЙ СТАРТ</span><h2>Как пользоваться</h2></div><button class="close-dialog" data-close>×</button></div><p>Выберите тему в меню, изучите краткую памятку и попробуйте интерактивный сценарий. Результаты тренажёров помогают разобраться в принципах безопасности.</p><p class="notice"><b>Важно:</b> приложение предназначено для обучения. Оно не заменяет поверенные приборы, инструктаж, проектную документацию и действующие требования вашей организации.</p></dialog>
+  <script src="app.js"></script>
+</body>
+</html>
